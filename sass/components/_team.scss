@@ -1,0 +1,75 @@
+.team {
+  background-color: $section-color;
+}
+
+.team__title {
+  color: $title-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-members__name {
+  color: $title-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+}
+
+.team-members__item {
+  flex-basis: calc((100% - 90px) / 4);
+  background-color: $white-color;
+  box-shadow: $team-member-shadow;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: var(--card-gap);
+  }
+}
+
+.team-members__description {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.team-members__thumb {
+  padding: 30px 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms $transition-cubic, color 250ms $transition-cubic;
+  color: $icon-color;
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    color: $white-color;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}

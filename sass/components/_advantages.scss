@@ -1,0 +1,36 @@
+.advantages {
+  padding-bottom: 0;
+}
+
+.advantages__title {
+  color: $title-color;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages__list {
+  display: flex;
+}
+
+.advantages__item {
+  flex-basis: calc(100% - 90px / 4);
+
+  &:not(:last-child) {
+    margin-right: $card-gap;
+  }
+}
+
+.advantages__text {
+  line-height: 1.71;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.advantages__thumb {
+  background-color: $section-color;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
