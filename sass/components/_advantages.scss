@@ -13,20 +13,15 @@
 
 .advantages__list {
   display: flex;
+  gap: $card-gap;
 }
 
 .advantages__item {
   flex-basis: calc(100% - 90px / 4);
-
-  &:not(:last-child) {
-    margin-right: $card-gap;
-  }
 }
 
 .advantages__text {
   line-height: 1.71;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 .advantages__thumb {

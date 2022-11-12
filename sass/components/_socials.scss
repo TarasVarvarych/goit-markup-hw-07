@@ -1,0 +1,30 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms $transition-cubic, color 250ms $transition-cubic;
+  color: $icon-color;
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    color: $white-color;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+.socials__link--footer {
+  background-color: $footer-socials-bg;
+  color: $white-color;
+}

@@ -79,42 +79,11 @@
     font-size: 16px;
     line-height: 1.25;
   }
+
+  &:focus-visible {
+    outline: none;
+  }
   &:focus {
     border-color: $brand-color;
   }
-
-  &:focus-visiable {
-    outline: none;
-  }
-}
-
-.subscribe__btn {
-  width: 200px;
-  height: 50px;
-  font: inherit;
-  color: $white-color;
-  background-color: $brand-color;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  cursor: pointer;
-  margin-left: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 28px;
-  transition: background-color 250ms $transition-cubic;
-  &:hover,
-  &:focus {
-    background-color: $button-active;
-  }
-}
-
-.subscribe__icon {
-  fill: currentColor;
-  margin-left: 10px;
 }

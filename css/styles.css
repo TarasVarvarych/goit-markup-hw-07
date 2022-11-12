@@ -850,7 +850,7 @@ a {
   border-color: var(--brand-color);
 }
 
-.data__input:focus + .data-icon {
+.data__input:focus + .data__icon {
   fill: var(--brand-color);
 }
 
