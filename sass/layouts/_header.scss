@@ -9,12 +9,11 @@
   color: $text-color;
   line-height: 1.14;
   font-weight: 500;
-  display: flex;
 }
 
 .navigation__link,
 .contact__link {
-  display: block;
+  display: flex;
   padding: 32px 0;
   transition: color 250ms $transition-cubic;
   &:hover,
@@ -53,6 +52,7 @@
 
 .navigation__link--current {
   position: relative;
+  color: $brand-color;
 }
 
 .navigation__link--current::after {

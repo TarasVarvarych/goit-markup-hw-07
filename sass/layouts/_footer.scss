@@ -1,7 +1,10 @@
 .footer {
   background-color: $background-color;
   padding: 60px 0;
-  display: flex;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address__link {
